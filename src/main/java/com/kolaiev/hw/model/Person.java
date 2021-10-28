@@ -2,13 +2,13 @@ package com.kolaiev.hw.model;
 
 public class Person {
 
-    private int person_id;
-    private String person_name;
+    private int personId;
+    private String personName;
     private int age;
 
-    public Person(int person_id, String person_name, int age) {
-        this.person_id = person_id;
-        this.person_name = person_name;
+    public Person(int personId, String personName, int age) {
+        this.personId = personId;
+        this.personName = personName;
         this.age = age;
     }
 
@@ -16,20 +16,20 @@ public class Person {
 
     }
 
-    public int getPerson_id() {
-        return person_id;
+    public int getPersonId() {
+        return personId;
     }
 
-    public void setPerson_id(int person_id) {
-        this.person_id = person_id;
+    public void setPersonId(int personId) {
+        this.personId = personId;
     }
 
-    public String getPerson_name() {
-        return person_name;
+    public String getPersonName() {
+        return personName;
     }
 
-    public void setPerson_name(String person_name) {
-        this.person_name = person_name;
+    public void setPersonName(String personName) {
+        this.personName = personName;
     }
 
     public int getAge() {

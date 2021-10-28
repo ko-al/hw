@@ -18,13 +18,15 @@ List of users
     <tbody>
         <c:forEach items="${people}" var="person">
             <tr>
-                <td>${person.person_id}</td>
-                <td>${person.person_name}</td>>
+                <td>${person.personId}</td>
+                <td>${person.personName}</td>>
                 <td>${person.age}</td>
             </tr>
         </c:forEach>
     </tbody>
 </table>
+<p>
+<a href ="/orders">Go to order list</a>
 
 </body>
 </html>

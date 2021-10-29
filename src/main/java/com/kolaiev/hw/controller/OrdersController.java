@@ -1,6 +1,6 @@
 package com.kolaiev.hw.controller;
 
-import com.kolaiev.hw.repo.OrdersDAO;
+import com.kolaiev.hw.repo.OrdersDAOImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -10,12 +10,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class OrdersController {
 
     @Autowired
-    private OrdersDAO ordersDAO;
+    private OrdersDAOImpl ordersDAOImpl;
 
 
     @GetMapping("/orders")
     public String all(Model model){
-        model.addAttribute("orderList", ordersDAO.getAllOrders());
+        model.addAttribute("orderList", ordersDAOImpl.getAllOrders());
         return "orders";
     }
 }

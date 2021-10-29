@@ -1,6 +1,5 @@
 package com.kolaiev.hw.controller;
 
-import com.kolaiev.hw.repo.PersonDAO;
 import com.kolaiev.hw.repo.PersonDAOImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
